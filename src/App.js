@@ -1,11 +1,13 @@
 import logo from "./logo.svg";
 import "./App.scss";
+import RouterComponent from "./component/searchbox/RouteContainer/RouterComponent";
+import { Fragment } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <Fragment>
+        <RouterComponent></RouterComponent>
+      </Fragment>
   );
 }
 
