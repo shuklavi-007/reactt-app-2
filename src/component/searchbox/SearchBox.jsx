@@ -7,9 +7,31 @@ class SearchBox extends Component {
       <div>
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-          </div>
-        </div>
+          <div class="input-group mb-3"> 
+  <input type="text" class="form-control">
+    </input>
+</div>
+<div class= "text-center">
+<button type="button" class="btn btn-success">add</button>
+
+</div>
+<div class="layout">
+  <div class="row">
+    <div class="col-md-4 sm-4">
+     col1
+    </div>
+    <div class="col-md-4 sm-4">
+      col2
+ 
+    </div>
+    <div class="col-md-4 sm-4">
+      col3
+    </div>
+  </div>
+</div>
+
+      </div>
+      </div>
       </div>
     );
   }
