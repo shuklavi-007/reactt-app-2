@@ -1,5 +1,27 @@
-.layout{
-    border: 2px solid black;
-    height: 50vh;
+.column {
+    float: left;
+    width: 25%;
+    padding: 70px;
+    margin-top: 20px;
+  }
+
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card {
+    padding: 139px;
+    text-align: center;
+    border: 1px solid black;
    
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
 }
+  

@@ -2,37 +2,71 @@ import React, { Component } from "react";
 import "./SearchBox.scss";
 
 class SearchBox extends Component {
+constructor(props){
+  super(props)
+  this.state ={
+    alertMessage : '',
+    inputValue : ''
+  };
+  
+}
+
+  handleClick = () => {
+    window.alert(this.state.alertMessage);
+    this.setState({
+      inputValue : ''
+     } )
+  }
+
+  getInputValue = (e) =>{
+
+ if(e.target.id == 'input1'){
+   this.setState({
+    alertMessage : e.target.value,
+    inputValue : e.target.value
+   } )
+ }
+  }
+
+
   render() {
     return (
       <div>
-        <div class="card">
-          <div class="card-body">
-          <div class="input-group mb-3"> 
-  <input type="text" class="form-control">
+        <div className="card">
+          <div className="card-body">
+          <div className="input-group mb-3"> 
+  <input id="input1" type="text" onChange={(e) => this.getInputValue(e)} value = {this.state.inputValue} className="searh-box">
     </input>
 </div>
-<div class= "text-center">
-<button type="button" class="btn btn-success">add</button>
+<div className= "text-center">
+<button onClick={() => this.handleClick()}  type="button" className="btn btn-success">add</button>
+
+
 
 </div>
-<div class="layout">
-  <div class="row">
-    <div class="col-md-4 sm-4">
-     col1
-    </div>
-    <div class="col-md-4 sm-4">
-      col2
- 
-    </div>
-    <div class="col-md-4 sm-4">
-      col3
-    </div>
+<div>
+<div className="row">
+  <div className="column">
+
+    <div className="card">..</div>
+  </div>
+  <div className="column">
+    <div className="card">..</div>
+  </div>
+  <div className="column">
+    <div className="card">..</div>
+  </div>
+   <div className="column">
+    <div className="card">..</div>
   </div>
 </div>
+          
 
       </div>
       </div>
       </div>
+      </div>
+      
     );
   }
 }
