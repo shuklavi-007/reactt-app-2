@@ -1,0 +1,34 @@
+.column {
+    float: left;
+    width: 25%;
+    padding: 40px;
+  
+  }
+
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card {
+    padding: 50px;
+    text-align: center;
+    border: 1px solid black;
+   
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 30%;
+      display: block;
+     
+    }
+}
+.card1{
+    padding: 120px;
+    text-align: center;
+    border: 1px solid black;
+    width: 320%;
+    height: 100%;
+    
+}
