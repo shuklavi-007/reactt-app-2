@@ -8,7 +8,7 @@ class TaskContainer extends Component {
     return (
       <div>
         <SearchBox></SearchBox>
-        
+
       </div>
     );
   }

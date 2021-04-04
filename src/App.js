@@ -3,11 +3,12 @@ import "./App.scss";
 import RouterComponent from "./component/RouteContainer/RouterComponent";
 import { Fragment } from "react";
 
+
 function App() {
   return (
     <Fragment>
-        <RouterComponent></RouterComponent>
-      </Fragment>
+      <RouterComponent></RouterComponent>
+    </Fragment>
   );
 }
 
