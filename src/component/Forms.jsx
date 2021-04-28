@@ -32,6 +32,7 @@ class Forms extends Component {
             input["name"] = "";
             input["email"] = "";
             input["phone"] = "";
+            input["Zipcode"] = "";
             this.setState({ input: input });
 
             alert('Form is submited');
@@ -65,6 +66,7 @@ class Forms extends Component {
             isValid = false;
             errors["phone"] = "Please enter your phone number.";
         }
+
 
         if (typeof input["phone"] !== "undefined") {
 
@@ -114,8 +116,15 @@ class Forms extends Component {
                         <div className="text-danger">{this.state.errors.phone}</div>
                     </div>
                     <br />
+                    <div>
+                        <p>Zip code: </p>
+                        <input type="text" name="Zipcode" pattern="[1-9][0-9]{5}" placeholder="Enter 6 digits number" value={this.state.input.Zipcode} />
+                    </div>
+                    <br />
 
-                    <input type="submit" value="Submit" class="btn btn-success" />
+                    <div className="text-center">
+                        <input type="submit" value="Submit" class="btn btn-success" />
+                    </div>
                 </form>
             </div>
         );
